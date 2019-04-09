@@ -10,7 +10,7 @@ var completeSVG = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:x
 
 renderTodoList();
 
-window.onbeforeunload=function(){
+window.onunload = window.onbeforeunload=function(){
     return "Are you sure to leave this page?";
 }
 
