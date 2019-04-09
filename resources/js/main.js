@@ -10,9 +10,9 @@ var completeSVG = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:x
 
 renderTodoList();
 
-window.onunload = window.onbeforeunload=function(){
-    return "Are you sure to leave this page?";
-}
+document.addEventListener("pause", function () {
+    alert("Hello! I am an alert box!!");
+}, false);
 
 // User clicked on the add button
 // If there is any text inside the item field, add that text to the todo list
